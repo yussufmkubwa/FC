@@ -1,0 +1,54 @@
+
+  .login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .login-container h2 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 2em;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Includes padding in width */
+    font-size: 1em;
+  }
+
+  .login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #27ae60; /* Kijani kibichi */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+  }
+
+  .login-container button:hover {
+    background-color: #229a55;
+  }

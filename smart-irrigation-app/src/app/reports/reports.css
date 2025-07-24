@@ -1,0 +1,104 @@
+.reports-container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .reports-container h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+
+  .reports-container p {
+    color: #555;
+    margin-bottom: 30px;
+  }
+
+  .report-options {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    align-items: flex-end; /* Panga vifungo chini */
+  }
+
+  .report-options .form-group {
+    text-align: left;
+    margin-bottom: 0; /* Ondoa margin ya chini kwa grid */
+  }
+
+  .report-options label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+  }
+
+  .report-options select,
+  .report-options input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+  }
+
+  .btn-generate-report {
+    background-color: #27ae60;
+    padding: 12px 20px;
+    width: 100%; /* Fanya kifungo kijaze upana */
+  }
+
+  .btn-generate-report:hover {
+    background-color: #229a55;
+  }
+
+  .report-display {
+    background-color: #fefefe;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .report-display h3 {
+    color: #3498db;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+
+  .chart-placeholder {
+    background-color: #ecf0f1;
+    height: 200px; /* Urefu wa placeholder ya chati */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+    font-style: italic;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .report-display p {
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 8px;
+  }
+
+  .report-display p span {
+    font-weight: bold;
+    color: #333;
+  }
+
+  @media (max-width: 768px) {
+    .report-options {
+      grid-template-columns: 1fr; /* Safu moja kwenye skrini ndogo */
+    }
+  }

@@ -1,0 +1,68 @@
+<div class="irrigation-container">
+  <h2>Udhibiti wa Umwagiliaji</h2>
+  <p>Dhibiti mifumo yako ya umwagiliaji na urekebishe ratiba.</p>
+
+  <div class="irrigation-zone">
+    <h3>Eneo la Umwagiliaji 1: Shamba la Mahindi</h3>
+    <div class="zone-status">
+      <p>Hali ya Sasa: <span class="status-active">Inamwagilia</span></p>
+      <p>Muda Uliosalia: <span>15 dakika</span></p>
+    </div>
+    <div class="zone-controls">
+      <button class="btn-primary">Anza Sasa</button>
+      <button class="btn-danger">Sitisha</button>
+      <button class="btn-secondary">Badilisha Ratiba</button>
+    </div>
+  </div>
+
+  <div class="irrigation-zone">
+    <h3>Eneo la Umwagiliaji 2: Bustani ya Mboga</h3>
+    <div class="zone-status">
+      <p>Hali ya Sasa: <span class="status-inactive">Imesitishwa</span></p>
+      <p>Ratiba Ijayo: <span>Kesho saa 6:00 AM</span></p>
+    </div>
+    <div class="zone-controls">
+      <button class="btn-primary">Anza Sasa</button>
+      <button class="btn-danger" disabled>Sitisha</button>
+      <button class="btn-secondary">Badilisha Ratiba</button>
+    </div>
+  </div>
+
+  <div class="schedule-section">
+    <h3>Ratiba za Umwagiliaji</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Eneo</th>
+          <th>Siku</th>
+          <th>Muda</th>
+          <th>Muda (Dakika)</th>
+          <th>Vitendo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Shamba la Mahindi</td>
+          <td>Kila Siku</td>
+          <td>05:00 AM</td>
+          <td>30</td>
+          <td>
+            <button class="btn-edit">Hariri</button>
+            <button class="btn-delete">Futa</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Bustani ya Mboga</td>
+          <td>Jumatatu, Alhamisi</td>
+          <td>06:00 AM</td>
+          <td>20</td>
+          <td>
+            <button class="btn-edit">Hariri</button>
+            <button class="btn-delete">Futa</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btn-add">Ongeza Ratiba Mpya</button>
+  </div>
+</div>

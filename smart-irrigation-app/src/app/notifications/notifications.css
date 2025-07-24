@@ -1,0 +1,74 @@
+.notifications-container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .notifications-container h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+
+  .notifications-container p {
+    color: #555;
+    margin-bottom: 30px;
+  }
+
+  .notification-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .notification-item {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    border-left: 5px solid #ccc; /* Border ya kawaida */
+  }
+
+  .notification-item.unread {
+    background-color: #e0f2f7; /* Rangi nyepesi ya bluu kwa arifa ambazo hazijasomwa */
+    border-left-color: #3498db; /* Bluu kwa arifa ambazo hazijasomwa */
+    font-weight: bold;
+  }
+
+  .notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .notification-header h3 {
+    color: #2c3e50;
+    margin: 0;
+    font-size: 1.3em;
+  }
+
+  .notification-time {
+    color: #777;
+    font-size: 0.9em;
+  }
+
+  .notification-item p {
+    color: #444;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-weight: normal; /* Hakikisha maandishi ya kawaida hayana bold */
+  }
+
+  .notification-item.unread p {
+    font-weight: bold; /* Maandishi ya arifa ambazo hazijasomwa yana bold */
+  }
+
+  .btn-mark-read {
+    background-color: #27ae60;
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+
+  .btn-mark-read:hover {
+    background-color: #229a55;
+  }

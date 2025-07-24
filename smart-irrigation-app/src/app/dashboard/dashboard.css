@@ -1,0 +1,63 @@
+.dashboard-container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .dashboard-container h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+
+  .dashboard-container p {
+    color: #555;
+    margin-bottom: 30px;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    justify-content: center;
+  }
+
+  .stat-card {
+    background-color: #e8f5e9; /* Kijani kibichi kidogo */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  }
+
+  .stat-card h3 {
+    color: #27ae60; /* Kijani kibichi */
+    margin-bottom: 15px;
+    font-size: 1.5em;
+  }
+
+  .stat-card p {
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 10px;
+  }
+
+  .stat-card p span {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .stat-card button {
+    margin-top: 15px;
+    background-color: #27ae60;
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+
+  .stat-card button:hover {
+    background-color: #229a55;
+  }
