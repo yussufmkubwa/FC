@@ -1,30 +1,40 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-
-import { Dashboard } from './dashboard/dashboard';
+import { Dashboard } from './navbar/dashboard/dashboard';
 import { Login } from './login/login';
-import { Reports } from './reports/reports';
-import { Monitoring } from './monitoring/monitoring';
-import { Irrigation } from './irrigation/irrigation';
-import { Settings } from './settings/settings';
-import { Notifications } from './notifications/notifications';
+import { Reports } from './navbar/reports/reports';
+import { Monitoring } from './navbar/monitoring/monitoring';
+import { Irrigation } from './navbar/irrigation/irrigation';
+import { Settings } from './navbar/settings/settings';
+import { Notifications } from './navbar/notifications/notifications';
+import { Navbar } from './navbar/navbar';
 
-// Fafanua njia za programu
+// Sanidi njia za programu
 export const routes: Routes = [
-  { path: '', redirectTo: '/login', pathMatch: 'full' }, // Njia ya mwanzo itaelekeza kwenye ukurasa wa login
-  { path: 'login', component: Login },
-  { path: 'dashboard', component: Dashboard },
-  { path: 'monitoring', component: Monitoring },
-  { path: 'irrigation', component: Irrigation },
-  { path: 'settings', component: Settings },
-  { path: 'notifications', component: Notifications },
-  { path: 'reports', component: Reports },
-  { path: '**', redirectTo: '/login' } // Rudisha kwenye login kwa njia zisizojulikana
+
+   // Default route
+  { path: '', component: Login },
+
+  {
+    path: 'navbar',
+    component: Navbar,
+    children: [
+      { path: 'dashboard', component: Dashboard },
+      { path: 'monitoring', component: Monitoring },
+      { path: 'irrigation', component: Irrigation },
+      { path: 'settings', component: Settings },
+      { path: 'notifications', component: Notifications },
+      { path: 'reports', component: Reports },
+      { path: '', redirectTo: 'dashboard', pathMatch: 'full' }, // default inside navbar
+    ]
+  },
+
+  { path: '**', redirectTo: '/login' } // Wildcard route for unknown paths
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)], // Sanidi routing kwa programu kuu
-  exports: [RouterModule] // Hamisha RouterModule ili iweze kutumika kwingine
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }
